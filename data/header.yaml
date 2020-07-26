@@ -1,0 +1,17 @@
+links:
+  - href: "/"
+    text: Docs
+  - href: "/changelog/"
+    text: Changelog
+  - href: "/internal/"
+    text: Implementation Docs
+  - href: "https://archit.us/"
+    newTab: false
+    text: Main App
+
+rightLinks:
+  - href: "https://discord.gg/svrRrSe"
+    icon: discord
+    class: d-none d-sm-block
+  - href: "https://github.com/architus"
+    icon: github

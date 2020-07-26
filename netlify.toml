@@ -1,0 +1,17 @@
+[build]
+  command = "gatsby build"
+  publish = "public/"
+  [build.environment]
+    APP_NAME = "Architus Docs"
+    SITE_ROOT = "https://docs.archit.us"
+    NODE_ENV = "production"
+    GITHUB_BRANCH = "master"
+    GATSBY_PUBLIC = "true"
+    NODE_VERSION = "14"
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://architus-docs.netlify.com/*"
+  to = "https://docs.archit.us/:splat"
+  status = 301
+  force = true

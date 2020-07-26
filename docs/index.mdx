@@ -1,0 +1,432 @@
+---
+shortTitle: トップページ
+title: Web アプリ学習カリキュラム
+noBreadcrumb: true
+isRoot: true
+---
+import ImageFactor from 'components/ImageFactor'
+import Icon from 'components/Icon'
+import { jsx, Text, Grid, Flex, Box, Image } from 'theme-ui'
+
+- [Font Awesome](https://fontawesome.com/icons?d=gallery)
+- [Flaticon](https://www.flaticon.com/)
+
+<Text
+    sx={{
+        display: 'block',
+        fontSize: 1,
+        fontWeight: 'lighter',
+        marginBottom: 4
+    }}>
+<Text
+    sx={{
+        display: 'inline-block',
+        fontWeight: 'bold',
+        color: 'orange'
+    }}>「一定以上のレベルで実務に貢献できる技術力」を身につける</Text>&nbsp;ことを目的としたカリキュラムです。
+    ただの知識を習得するのではなく「学習して得た知識を使い、より多くの問題を解決できること」を目指します。
+</Text>
+
+<Text className='home-h2'>
+
+## 学習カリキュラム単元一覧
+
+</Text>
+
+<Text
+    sx={{
+        fontSize: 1,
+        fontWeight: 'lighter',
+        marginBottom: 4
+    }}>一般的な Web アプリの開発に必要なスキル全般を学びます。
+「a1. GitHub」から順番に単元を進め、最後に Web アプリケーションの作成、単体テストの実施、バグ修正まで行います。</Text>
+  
+<Grid
+    gap={4}
+    columns={[ 2, '2fr 2fr'] }>
+    <Box>
+        <Text className='home-h3'>
+
+### フロントエンド技術
+
+</Text>
+        <Text
+            sx={{
+                fontSize: 2,
+                fontWeight: 'normal',
+                marginBottom: 3,
+                color: 'gray'
+            }}>クライアントサイド</Text>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='github_octacat.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a1. GitHub</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>チーム開発を想定した Git の体系的な知識を習得します</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='html5.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a2. HTML</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>マークアップによる内容の意味付け（セマンティック）を守った HTML のコーディングを習得します</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='css.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a3. CSS</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>CSS の概念や記述方法、どういった CSS の記述で、どのような見た目が実現できるかを学習します</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='javascript.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a4. JavaScript</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>ECMAScript 2015 の仕様にしたがった JavaScript をコーディングを習得し、DOM を操作することで、Web ページの内容やデータを動的に変更させる手法を学ぶ</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='jquery.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a5. jQuery</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>クライアント側（ブラウザ上）で動的な操作を実装したいという要望があった場合に、jQuery を使ってすばやく実現する方法を学ぶ</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='browser.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a6. Developer Tools</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>Developer Tools を使った HTML 要素や CSS の調査、JavaScript をデバッグする方法を学ぶ</Text>
+            </Box>
+        </Grid> 
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='api.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a7. Web API</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>RESTful な設計と HTTP メソッドを理解し、 Web API 取得したデータを画面表示させる方法を学ぶ</Text>
+            </Box>
+        </Grid> 
+    </Box>
+    <Box>
+        <Text className='home-h3'>
+
+### バックエンド技術
+
+</Text>
+        <Text
+            sx={{
+                fontSize: 2,
+                fontWeight: 'normal',
+                marginBottom: 3,
+                color: 'gray'
+            }}>サーバサイド</Text>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='github_octacat.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">b1. DB</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>レコードを選択、結合、集約して目的のデータを取得する SQL を書く方法、複数人による同時更新を想定した排他制御の考慮、
+                    実行計画を読み解きながらより高速なクエリを意識したデータベース制御を学ぶ</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='github_octacat.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">b2. PHP</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>PHP での Web 開発の環境構築から、サーバー処理とフロント画面の基本的な仕組みを理解し、実装スキルを習得する</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='github_octacat.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a1. GitHub</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>チーム開発を想定した Git の体系的な知識を習得します</Text>
+            </Box>
+        </Grid>
+        <Grid 
+            gap={3}
+            columns={[ 1, '36px 1fr' ]}>
+            <Box>
+                <ImageFactor filename='github_octacat.png' picWidh='36px' />
+            </Box>
+            <Box>
+                <Text
+                    sx={{
+                        fontSize: 4,
+                        fontWeight: 'bold',
+                        marginBottom: 2
+                    }}>
+                    <a href="">a1. GitHub</a>
+                </Text>
+                <Text
+                    sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 4
+                    }}>チーム開発を想定した Git の体系的な知識を習得します</Text>
+            </Box>
+        </Grid>
+        <Box sx={{
+                        fontSize: 1,
+                        fontWeight: 'normal',
+                        marginBottom: 24
+                    }}/>
+        <Grid 
+            gap={0}
+            columns={[ 2, '1fr 1fr' ]}>
+            <Box />
+            <Box>
+                <ImageFactor filename='crane_construct.png' />
+            </Box>
+        </Grid>
+    </Box>
+</Grid>
+
+## Web アプリ学習コースの進め方  
+
+<Text
+            sx={{
+                fontSize: 1,
+                fontWeight: 'normal',
+                marginBottom: 4
+            }}>
+基本的には、「a1. GitHub」から、順番に単元を進めます。この学習カリキュラムを進める前に、必ず以下のルールを確認しておいてください。
+</Text>
+
+<Grid 
+    gap={3}
+    columns={[ 1, '36px 1fr' ]}>
+    <Box>
+        <Text
+            sx={{
+                fontSize: 5,
+                marginTop: -3
+            }}>
+            <Icon name="award" />
+        </Text>
+    </Box>
+    <Box>
+        <Text className='home-h3'>
+
+### 受講者資格
+
+</Text>
+        <Text
+            sx={{
+                fontSize: 1,
+                fontWeight: 'lighter',
+                marginBottom: 4
+            }}>Java カリキュラムを修了、10 クラス以上を用いた Java のコンソールアプリを作成する技術や知識が身についていること
+            （事前に基本情報技術者試験を合格しているとより学習しやすいです）。</Text>
+    </Box>
+</Grid>
+
+<Grid 
+    gap={3}
+    columns={[ 1, '36px 1fr' ]}>
+    <Box>
+        <Text
+            sx={{
+                fontSize: 5,
+                marginTop: -3
+            }}>
+            <Icon name="code-branch" />
+        </Text>
+    </Box>
+    <Box>
+        <Text className='home-h3'>
+
+### 不足している情報について
+
+</Text>
+        <Text
+            sx={{
+                fontSize: 1,
+                fontWeight: 'lighter',
+                marginBottom: 2
+            }}>このカリュキュラムでは、あえて記載していない情報もあります。詳細は以下のページをご確認ください。
+        </Text>
+        <Flex>
+            <Box p={2} sx={{ flex: '0 1 auto' }}>
+                <Icon name="link" />
+            </Box>
+            <Box p={2} bg='muted'>
+
+[カリュキュラムで不足している情報について](https://www.flaticon.com/)  
+
+</Box>
+         </Flex>
+    </Box>
+</Grid>
+
+## 🚀 Get Started
+
+To start using architus, it must first be added to a server of your choice. Follow this link to be redirected to Discord: [Add architus](https://api.archit.us/invite/0)
+
+## 🔗 Quick Links
+
+- [Main website](https://archit.us/)
+- [Dashboard](https://archit.us/app)
+- [Commands](/commands) 
+- [Patch Notes](/changelog/)
+
+> Note: internal docs on the implementation details of the architus open source project are available [here](/internal)
